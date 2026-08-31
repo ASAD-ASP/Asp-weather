@@ -2659,3 +2659,54 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* این بلوک را به انتهای index.css اضافه کنید — رفع مشکل خوانایی روی پس‌زمینه‌های روشن */
+
+.hourly-chart,
+.daily-forecast,
+.wind-map-card,
+.tourist-notification,
+.profile-card,
+.stat-item,
+.city-chip,
+.compare-card,
+.compare-placeholder,
+.settings-chip,
+.quick-btn {
+  background: rgba(15, 20, 35, 0.4) !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.quick-btn:hover,
+.settings-chip:hover,
+.city-chip:hover {
+  background: rgba(15, 20, 35, 0.55) !important;
+}
+
+.city-chip.active,
+.settings-chip.active {
+  background: rgba(15, 20, 35, 0.65) !important;
+}
+
+.forecast-day:hover {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+/* سایه‌ی متن بیشتر برای خوانایی روی پس‌زمینه‌های خیلی روشن (آفتابی/برفی روز) */
+.hourly-chart h3,
+.daily-forecast h3,
+.day-name,
+.day-temps,
+.chip-name,
+.chip-temp,
+.stat-value,
+.stat-label,
+.profile-title,
+.profile-subtitle,
+.wind-map-card h3,
+.tourist-header,
+.compare-name,
+.compare-temp,
+.compare-desc,
+.compare-row {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
